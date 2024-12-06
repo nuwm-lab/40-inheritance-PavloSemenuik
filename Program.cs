@@ -138,6 +138,7 @@ public class CubicEquation : QuadraticEquation
 
 class Program
 {
+
     static void Main(string[] args)
     {
         Console.WriteLine("Оберiть тип рiвняння: (1 - квадратне, 2 - кубiчне)");
