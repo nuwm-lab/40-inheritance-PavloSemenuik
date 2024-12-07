@@ -2,7 +2,7 @@ name: PR Agent for NUWM
 
 on:
   pull_request:
-    types: [ opened, reopened ]
+    types: [opened, reopened]
 
 jobs:
   pr_agent_job:
@@ -21,3 +21,4 @@ jobs:
           INSTALLATION_ID: ${{ secrets.INSTALLATION_ID }}
           GOOGLE_CREDENTIALS_CONTENT: ${{ secrets.GOOGLE_CREDENTIALS_CONTENT }}
           SPREADSHEET_URL: ${{ secrets.SPREADSHEET_URL }}
+          SHEETS_NAMING: ${{ secrets.SHEETS_NAMING }} # Додано змінну SHEETS_NAMING
